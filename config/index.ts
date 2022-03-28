@@ -1,0 +1,5 @@
+export const PRIVY_API_URL = process.env.PRIVY_API_URL || ''
+export const PRIVY_KMS_URL = process.env.PRIVY_KMS_URL || ''
+export const PRIVY_API_KEY = process.env.PRIVY_API_KEY || ''
+export const PRIVY_API_SECRET = process.env.PRIVY_API_SECRET || ''
+export const FAKE_ACCESS_TOKEN = 'MAGIC_ACCESS_TOKEN'

@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "setup-app": "node ./scripts/setup-app.mjs"
+  },
+  "dependencies": {
+    "@privy-io/privy-browser": "^0.0.1-beta.1",
+    "@privy-io/privy-node": "^0.0.1-beta.3",
+    "axios": "^0.24.0",
+    "bulma": "^0.9.3",
+    "dotenv": "^16.0.1",
+    "handlebars": "^4.7.7",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "swr": "^1.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.4",
+    "@types/react": "17.0.38",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.12.0",
+    "eslint-config-next": "12.1.4",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.1",
+    "tailwindcss": "^3.0.7",
+    "typescript": "^4.5.4"
+  }
+}
