@@ -13,18 +13,17 @@ async function handler(
 ) {
   checkAuth(req)
 
-  // We are using an old users endpoint while we work on rolling out a new one!
-  const response = await axios.get(
-    `${process.env.PRIVY_API_URL}/groups/default/users`,
-    {
-      auth: {
-        username: PRIVY_API_KEY,
-        password: PRIVY_API_SECRET,
-      },
-    }
-  )
+  // We're in the process of figuring out the best way to pull the list of users
+  // for your account. In the meantime, you can request this data by calling the
+  // endpoint directly!
+  const response = await axios.get(`${process.env.PRIVY_API_URL}/users/ids`, {
+    auth: {
+      username: PRIVY_API_KEY,
+      password: PRIVY_API_SECRET,
+    },
+  })
 
-  const usersIds = response.data.user_ids as string[]
+  const usersIds = response.data.data as string[]
   const users = usersIds.map((userId) => ({
     id: userId,
   }))
